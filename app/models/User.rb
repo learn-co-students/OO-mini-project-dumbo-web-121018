@@ -41,4 +41,18 @@ class User
   def most_recent_recipe
     recipes[-1].recipe
   end
+
+  def top_three_recipes
+    hash1 = recipes.each_with_object(Hash.new(0)) do |recipe_card, hash|
+      hash[recipe_card.recipe.name] = recipe_card.rating
+    end
+    hash1.sort_by {|key, value| value}.reverse![0..2]
+  end
+
+  def safe_recipes
+    bad_ingredients = self.allergens
+    Recipe.all.select do |recipe_instance|
+      recipe_instance.ingredients - bad_ingredients == recipe_instance.ingredients
+    end
+  end
 end

@@ -1,6 +1,6 @@
 
 class Recipe
-
+  attr_reader :name
   @@all = []
 
   def initialize(name=nil)
@@ -42,10 +42,16 @@ class Recipe
     end
   end
 
+  def allergens
+    self.ingredients.select do |ingredient|
+      ingredient.all_allergens.any?
+    end
+  end
 
-  # def self.most_popular
-  #   self.all.each do |recipe|
-  #     recipe
-  #   end
-  # end
+  def self.most_popular
+    hash1 = RecipeCard.all.each_with_object(Hash.new(0)) do |recipe_card, hash|
+      hash[recipe_card.recipe] += 1
+    end
+    hash1.max_by {|key, value| value}[0]
+  end
 end

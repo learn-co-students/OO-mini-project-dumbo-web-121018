@@ -13,14 +13,14 @@ Build the following methods on the Recipe class
 
 <!-- - `Recipe.all` -->
 <!-- should return all of the recipe instances -->
-- `Recipe.most_popular`
-should return the recipe instance with the highest number of users (the recipe that has the most recipe cards)
+<!-- - `Recipe.most_popular`
+should return the recipe instance with the highest number of users (the recipe that has the most recipe cards) -->
 <!-- - `Recipe#users`
 should return the user instances who have recipe cards with this recipe -->
 <!-- - `Recipe#ingredients`
 should return all of the ingredients in this recipe -->
-- `Recipe#allergens`
-should return all of the ingredients in this recipe that are allergens
+<!-- - `Recipe#allergens`
+should return all of the ingredients in this recipe that are allergens -->
 <!-- - `Recipe#add_ingredients`
 should take an array of ingredient instances as an argument, and associate each of those ingredients with this recipe -->
 
@@ -38,8 +38,8 @@ should accept a recipe instance as an argument, as well as a date and rating, an
 should accept an ingredient instance as an argument, and create a new allergen instance for this user and the given ingredient -->
 <!-- - `User#allergens`
 should return all of the ingredients this user is allergic to -->
-- `User#top_three_recipes`
-should return the top three highest rated recipes for this user.
+<!-- - `User#top_three_recipes`
+should return the top three highest rated recipes for this user. -->
 <!-- - `User#most_recent_recipe`
 should return the recipe most recently added to the user's cookbook. -->
 
@@ -65,8 +65,8 @@ Build the following methods on the Ingredient class
 
 <!-- - `Ingredient.all`
 should return all of the ingredient instances -->
-- `Ingredient.most_common_allergen`
-should return the ingredient instance that the highest number of users are allergic to
+<!-- - `Ingredient.most_common_allergen`
+should return the ingredient instance that the highest number of users are allergic to -->
 
 
 ### `RecipeIngredient`
@@ -89,6 +89,6 @@ should return all of the Allergen instances -->
 
 
 ### `**Bonus**`
-- `User#safe_recipes`
-should return all recipes that do not contain ingredients the user is allergic to
+<!-- - `User#safe_recipes`
+should return all recipes that do not contain ingredients the user is allergic to -->
 - What other methods might be useful to have?
