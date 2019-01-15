@@ -28,7 +28,7 @@ should take an array of ingredient instances as an argument, and associate each 
 ### `User`
 Build the following methods on the User class
 
-- `User.all`
+<!-- - `User.all`
 should return all of the user instances
 - `User#recipes`
 should return all of the recipes this user has recipe cards for
@@ -41,7 +41,7 @@ should return all of the ingredients this user is allergic to
 - `User#top_three_recipes`
 should return the top three highest rated recipes for this user.
 - `User#most_recent_recipe`
-should return the recipe most recently added to the user's cookbook.
+should return the recipe most recently added to the user's cookbook. -->
 
 
 
